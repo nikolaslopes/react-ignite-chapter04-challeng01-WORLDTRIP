@@ -1,12 +1,4 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Img,
-  Text,
-  useBreakpointValue,
-  VStack,
-} from '@chakra-ui/react'
+import { Flex, useBreakpointValue } from '@chakra-ui/react'
 import { ImageBox } from './ImageBox'
 import { TextBox } from './TextBox'
 
@@ -32,7 +24,6 @@ export function Banner() {
         paddingX={'2'}
         paddingY={'14'}
         justifyContent={'space-between'}
-        border={'1px solid red'}
       >
         <TextBox />
         {isWideVersion && <ImageBox />}

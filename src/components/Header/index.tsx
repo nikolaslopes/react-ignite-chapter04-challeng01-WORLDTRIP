@@ -11,7 +11,6 @@ export function Header() {
         paddingX={'2'}
         alignItems={'center'}
         justifyContent={'space-between'}
-        border={'1px solid blue'}
       >
         <Icon
           as={FiChevronLeft}

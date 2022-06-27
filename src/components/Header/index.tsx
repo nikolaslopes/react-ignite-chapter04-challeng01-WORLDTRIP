@@ -30,7 +30,7 @@ export function Header() {
           <Img
             width={'auto'}
             height={['1.5rem', '2rem', '3rem']}
-            src="/Logo.svg"
+            src="/logo.svg"
             alt="Logo World Trip"
           />
         </Flex>

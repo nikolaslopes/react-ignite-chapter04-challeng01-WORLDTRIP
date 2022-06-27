@@ -27,21 +27,23 @@ export function TravelTips() {
       marginX={'auto'}
       paddingX={'12'}
       marginY={{ base: '9', md: '9', lg: '28' }}
+      justifyContent={'center'}
+      alignItems={'center'}
     >
       <GridItem>
-        <Item text={'vida noturna'} />
+        <Item iconName={'drink'} text={'vida noturna'} />
       </GridItem>
       <GridItem>
-        <Item text={'praia'} />
+        <Item iconName={'beach'} text={'praia'} />
       </GridItem>
       <GridItem>
-        <Item text={'moderno'} />
+        <Item iconName={'building'} text={'moderno'} />
       </GridItem>
       <GridItem>
-        <Item text={'clássico'} />
+        <Item iconName={'museum'} text={'clássico'} />
       </GridItem>
       <GridItem colSpan={{ base: 2, md: 1 }}>
-        <Item text={'e mais...'} />
+        <Item iconName={'world'} text={'e mais...'} />
       </GridItem>
     </Grid>
   )

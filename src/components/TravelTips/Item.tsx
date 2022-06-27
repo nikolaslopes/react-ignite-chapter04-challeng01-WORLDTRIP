@@ -2,9 +2,10 @@ import { Box, Flex, Img, Text, useBreakpointValue } from '@chakra-ui/react'
 
 export interface ItemProps {
   text: string
+  iconName: 'beach' | 'building' | 'drink' | 'museum' | 'world'
 }
 
-export function Item({ text }: ItemProps) {
+export function Item({ text, iconName }: ItemProps) {
   const isWideVersion = useBreakpointValue({
     base: false,
     md: true,
@@ -18,8 +19,8 @@ export function Item({ text }: ItemProps) {
     >
       {isWideVersion ? (
         <Img
-          src="/icons/beach.svg"
-          alt="Icon"
+          src={`icons/${iconName}.svg`}
+          alt={iconName}
           width={{ base: '20px', md: '75px', lg: 'auto' }}
         />
       ) : (

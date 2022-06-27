@@ -9,10 +9,8 @@ export const theme = extendTheme({
     gray: {
       900: '#47585B',
       800: '#999999',
-      700: '#DADADA',
-    },
-    white: {
-      900: '#F5F8FA',
+      200: '#DADADA',
+      100: '#F5F8FA',
     },
   },
   fonts: {
@@ -22,7 +20,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
-        backgroundColor: 'white.900',
+        backgroundColor: 'gray.100',
       },
     },
   },

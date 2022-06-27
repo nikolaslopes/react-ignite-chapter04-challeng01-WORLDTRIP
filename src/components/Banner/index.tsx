@@ -27,10 +27,12 @@ export function Banner() {
     >
       <Flex
         width={'100%'}
+        maxWidth={'1300px'}
         marginX={'auto'}
-        justifyContent={'space-between'}
-        paddingX={'10'}
+        paddingX={'2'}
         paddingY={'14'}
+        justifyContent={'space-between'}
+        border={'1px solid red'}
       >
         <TextBox />
         {isWideVersion && <ImageBox />}

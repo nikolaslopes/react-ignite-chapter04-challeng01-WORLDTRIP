@@ -26,7 +26,7 @@ export function TravelTips() {
       maxWidth={'1300px'}
       marginX={'auto'}
       paddingX={'12'}
-      marginY={{ base: '9', md: '9', lg: '28' }}
+      marginTop={{ base: '9', md: '16' }}
       justifyContent={'center'}
       alignItems={'center'}
     >

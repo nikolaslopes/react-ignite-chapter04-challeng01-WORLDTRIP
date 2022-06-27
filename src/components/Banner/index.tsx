@@ -21,7 +21,7 @@ export function Banner() {
         width={'100%'}
         maxWidth={'1300px'}
         marginX={'auto'}
-        paddingX={'2'}
+        paddingX={'6'}
         paddingY={'14'}
         justifyContent={'space-between'}
       >

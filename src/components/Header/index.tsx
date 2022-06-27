@@ -12,11 +12,11 @@ export function Header() {
         width={'100%'}
         maxWidth={'1300px'}
         marginX={'auto'}
-        paddingX={'2'}
+        paddingX={'6'}
         alignItems={'center'}
         justifyContent={'space-between'}
       >
-        {asPath !== '/' && (
+        {asPath === '/' && (
           <Link href={'/'}>
             <Icon
               as={FiChevronLeft}

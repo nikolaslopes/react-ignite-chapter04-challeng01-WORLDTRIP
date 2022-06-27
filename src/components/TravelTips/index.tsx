@@ -1,10 +1,10 @@
-import { Flex, Icon, Text } from '@chakra-ui/react'
+import { Flex, Img, Text } from '@chakra-ui/react'
 
 export function TravelTips() {
   return (
     <Flex>
-      <Icon />
-      <Text>vida noturno</Text>
+      <Img src="/icons/beach.svg" alt="Beach" />
+      <Text>vida noturna</Text>
     </Flex>
   )
 }

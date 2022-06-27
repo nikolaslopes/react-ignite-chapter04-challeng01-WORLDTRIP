@@ -5,7 +5,7 @@ import { TravelTips } from '../components/TravelTips'
 
 const Home: NextPage = () => {
   return (
-    <Flex>
+    <Flex flexDirection={'column'}>
       <Banner />
       <TravelTips />
     </Flex>

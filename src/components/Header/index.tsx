@@ -16,7 +16,7 @@ export function Header() {
         alignItems={'center'}
         justifyContent={'space-between'}
       >
-        {asPath === '/' && (
+        {asPath !== '/' && (
           <Link href={'/'}>
             <Icon
               as={FiChevronLeft}

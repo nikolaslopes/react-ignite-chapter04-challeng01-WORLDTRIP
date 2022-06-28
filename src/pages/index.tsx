@@ -2,6 +2,7 @@ import { Box, Flex, Heading, useBreakpointValue } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Banner } from '../components/Banner'
+import { ContinentsSlider } from '../components/ContinentSlider'
 import { TravelTips } from '../components/TravelTips'
 
 const Home: NextPage = () => {
@@ -32,6 +33,10 @@ const Home: NextPage = () => {
       >
         Vamos nessa? {!isWideVersion && <br />} Então escolha seu continente
       </Heading>
+
+      <Flex paddingY={'12'}>
+        <ContinentsSlider />
+      </Flex>
     </Flex>
   )
 }

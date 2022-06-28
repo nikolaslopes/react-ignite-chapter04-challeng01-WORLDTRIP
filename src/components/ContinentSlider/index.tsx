@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Swiper as SwiperReact, SwiperSlide } from 'swiper/react'
 import SwiperCore, { A11y, Autoplay, Navigation, Pagination } from 'swiper'
 import { Flex, Heading, Text, VStack } from '@chakra-ui/react'
@@ -5,7 +6,6 @@ import { Flex, Heading, Text, VStack } from '@chakra-ui/react'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
-import Link from 'next/link'
 
 SwiperCore.use([A11y, Autoplay, Navigation, Pagination])
 

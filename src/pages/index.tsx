@@ -8,6 +8,9 @@ import { TravelTips } from '../components/TravelTips'
 const Home: NextPage = () => {
   return (
     <Flex flexDirection={'column'}>
+      <Head>
+        <title>worldtrip | Home</title>
+      </Head>
       <Banner />
       <TravelTips />
 

@@ -7,16 +7,27 @@ export function ContinentBanner({ main_image, name }: IContinentBanner) {
       as={'section'}
       width={'100%'}
       height={['150px', '200px', '250px', '500px']}
-      border={'1px solid red'}
+      backgroundImage={`url(${main_image})`}
+      backgroundRepeat={'no-repeat'}
+      backgroundSize={'cover'}
     >
-      <Box>
-        <Heading
-          fontSize={['28px', '4xl', '5xl']}
-          fontWeight={'600'}
-          color={'gray.200'}
+      <Box width={'100%'} height={'100%'} backgroundColor={'blur.900'}>
+        <Flex
+          width={'100%'}
+          maxWidth={'1300px'}
+          height={'100%'}
+          alignItems={'center'}
+          justifyContent={'center'}
+          marginX={'auto'}
         >
-          {name}
-        </Heading>
+          <Heading
+            fontSize={['28px', '4xl', '5xl']}
+            fontWeight={'600'}
+            color={'gray.200'}
+          >
+            {name}
+          </Heading>
+        </Flex>
       </Box>
     </Flex>
   )

@@ -29,7 +29,7 @@ export default function Continent({ country }: CountryPros) {
   return (
     <Flex>
       <Head>
-        <title>worldtrip | teste</title>
+        <title>worldtrip | {country.name}</title>
       </Head>
 
       <ContinentBanner

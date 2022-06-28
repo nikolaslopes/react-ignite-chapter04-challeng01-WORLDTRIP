@@ -6,11 +6,6 @@ import { ContinentsSlider } from '../components/ContinentSlider'
 import { TravelTips } from '../components/TravelTips'
 
 const Home: NextPage = () => {
-  const isWideVersion = useBreakpointValue({
-    base: false,
-    md: true,
-  })
-
   return (
     <Flex flexDirection={'column'}>
       <Banner />
@@ -31,7 +26,7 @@ const Home: NextPage = () => {
         fontSize={{ base: 'lg', sm: '2xl', md: '3xl' }}
         color={'gray.900'}
       >
-        Vamos nessa? {!isWideVersion && <br />} Então escolha seu continente
+        Vamos nessa? <br /> Então escolha seu continente
       </Heading>
 
       <Flex paddingY={'12'}>

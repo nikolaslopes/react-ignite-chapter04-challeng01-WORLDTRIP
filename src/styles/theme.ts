@@ -12,6 +12,9 @@ export const theme = extendTheme({
       200: '#DADADA',
       100: '#F5F8FA',
     },
+    blur: {
+      900: 'rgba(28, 20, 1, 0.35)',
+    },
   },
   fonts: {
     headings: `'Poppins', sans-serif`,

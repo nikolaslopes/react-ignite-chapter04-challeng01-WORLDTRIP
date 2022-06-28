@@ -31,7 +31,6 @@ export function ContinentTopCities({ cities }: IContinentTopCities) {
       >
         {cities.map((country) => (
           <CityInfo
-            id={country.id}
             key={country.id}
             name={country.name}
             capital={country.capital}

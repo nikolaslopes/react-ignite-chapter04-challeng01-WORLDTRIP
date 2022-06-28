@@ -1,5 +1,5 @@
 export interface ICity {
-  id: number
+  id?: number
   name: string
   capital: string
   thumb: string

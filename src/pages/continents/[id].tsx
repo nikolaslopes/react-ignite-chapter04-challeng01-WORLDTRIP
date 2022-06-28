@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import { Params } from 'next/dist/server/router'
 import Head from 'next/head'
 import { ContinentBanner } from '../../components/ContinentBanner'
+import { ContinentInfo } from '../../components/ContinentInfo'
 import { ICity, ICountry } from '../../interfaces/global'
 import { Api } from '../../services/api'
 
@@ -27,7 +28,7 @@ export default function Continent({ country }: CountryPros) {
   console.log(country)
 
   return (
-    <Flex>
+    <Flex flexDirection={'column'}>
       <Head>
         <title>worldtrip | {country.name}</title>
       </Head>
@@ -36,6 +37,8 @@ export default function Continent({ country }: CountryPros) {
         name={country.name}
         main_image={country.secondary_image}
       />
+
+      <ContinentInfo resume={country.resume} meta={country.meta} />
     </Flex>
   )
 }

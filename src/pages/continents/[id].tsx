@@ -4,6 +4,7 @@ import { Params } from 'next/dist/server/router'
 import Head from 'next/head'
 import { ContinentBanner } from '../../components/ContinentBanner'
 import { ContinentInfo } from '../../components/ContinentInfo'
+import { ContinentTopCities } from '../../components/ContinentTopCities'
 import { ICity, ICountry } from '../../interfaces/global'
 import { Api } from '../../services/api'
 
@@ -39,6 +40,8 @@ export default function Continent({ country }: CountryPros) {
       />
 
       <ContinentInfo resume={country.resume} meta={country.meta} />
+
+      <ContinentTopCities cities={country.cities} />
     </Flex>
   )
 }

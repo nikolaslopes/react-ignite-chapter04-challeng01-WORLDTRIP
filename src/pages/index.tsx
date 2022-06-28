@@ -26,13 +26,14 @@ const Home: NextPage = () => {
       <Heading
         fontWeight={'500'}
         textAlign={'center'}
-        fontSize={{ base: 'lg', sm: '2xl', md: '3xl' }}
+        fontSize={['xl', '2xl', '4xl']}
+        marginBottom={['5', '14']}
         color={'gray.900'}
       >
         Vamos nessa? <br /> Então escolha seu continente
       </Heading>
 
-      <Flex paddingY={'12'}>
+      <Flex paddingBottom={'16'}>
         <ContinentsSlider />
       </Flex>
     </Flex>

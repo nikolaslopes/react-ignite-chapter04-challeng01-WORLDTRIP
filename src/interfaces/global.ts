@@ -9,11 +9,11 @@ export interface ICity {
 export interface ICountry {
   id: number
   name: string
-  info: string
+  info?: string
   resume: string
-  main_image: string
+  main_image?: string
   secondary_image: string
-  meta: {
+  meta?: {
     countries_amount: number
     languages_amount: number
     cities_amount: {

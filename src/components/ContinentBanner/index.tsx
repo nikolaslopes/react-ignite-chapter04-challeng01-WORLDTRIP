@@ -1,6 +1,7 @@
 import { Box, Flex, Heading } from '@chakra-ui/react'
+import { IContinentBanner } from './types'
 
-export function ContinentBanner() {
+export function ContinentBanner({ main_image, name }: IContinentBanner) {
   return (
     <Flex
       as={'section'}
@@ -14,7 +15,7 @@ export function ContinentBanner() {
           fontWeight={'600'}
           color={'gray.200'}
         >
-          aa
+          {name}
         </Heading>
       </Box>
     </Flex>

@@ -59,7 +59,7 @@ export function ContinentsSlider() {
         >
           {countries.map((country) => (
             <SwiperSlide key={country.id}>
-              <Link href={`continent/${country.id}`}>
+              <Link href={`continents/${country.id}`}>
                 <Flex
                   width={'100%'}
                   height={'100%'}

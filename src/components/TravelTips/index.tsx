@@ -1,14 +1,4 @@
-import {
-  Box,
-  Flex,
-  Grid,
-  GridItem,
-  HStack,
-  Img,
-  SimpleGrid,
-  Text,
-  useBreakpointValue,
-} from '@chakra-ui/react'
+import { Grid, GridItem, useBreakpointValue } from '@chakra-ui/react'
 import { Item } from './Item'
 
 export function TravelTips() {
